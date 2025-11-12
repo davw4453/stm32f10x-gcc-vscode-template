@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "name": "linux-gcc-arm",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/home/david/STM32F10x_Std/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/**",
+        "/home/david/STM32F10x_Std/Libraries/CMSIS/CM3/CoreSupport/**",
+        "/home/david/STM32F10x_Std/Libraries/STM32F10x_StdPeriph_Driver/inc/**"
+      ],
+      "defines": [
+        
+      ],
+      "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+      "cStandard": "c99",
+      "cppStandard": "gnu++98",
+      "intelliSenseMode": "linux-gcc-arm",
+      "browse": {
+        "path": [
+          "${workspaceFolder}",
+          "/home/david/STM32F10x_Std/Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/**",
+          "/home/david/STM32F10x_Std/Libraries/CMSIS/CM3/CoreSupport/**",
+          "/home/david/STM32F10x_Std/Libraries/STM32F10x_StdPeriph_Driver/inc/**"
+        ],
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+      }
+    }
+  ],
+  "version": 4
+}

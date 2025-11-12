@@ -1,0 +1,47 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Cortex-Debug: OpenOCD",
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/build/stm32f10x_env_template.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "runToEntryPoint": "main",
+      "servertype": "openocd",
+      "device": "STM32F103xx",
+      "configFiles": [
+        "interface/stlink.cfg",
+        "target/stm32f1x.cfg"
+      ],
+      "showDevDebugOutput": "parsed",
+      "preLaunchTask": "build",
+      "postDebugTask": "clean"
+    },
+    {
+      "name": "Cortex-Debug: J-Link",
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/build/stm32f10x_env_template.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "runToEntryPoint": "main",
+      "servertype": "jlink",
+      "device": "STM32F103xx",
+      "interface": "swd",
+      "showDevDebugOutput": "parsed",
+      "preLaunchTask": "build"
+    },
+    {
+      "name": "Cortex-Debug: Remote GDB",
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/stm32f10x_env_template.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "runToEntryPoint": "main",
+      "servertype": "external",
+      "gdbTarget": "localhost:3333",
+      "showDevDebugOutput": "parsed",
+      "preLaunchTask": "build"
+    }
+  ]
+}
